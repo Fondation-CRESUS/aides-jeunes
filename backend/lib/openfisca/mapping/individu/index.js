@@ -108,6 +108,12 @@ var individuSchema = {
       return contratAlternant === "professionnalisation"
     },
   },
+  regime_securite_sociale: {
+    src: "_securite_sociale",
+    fn: function (_securite_sociale) {
+      return _securite_sociale === "msa" ? "regime_agricole" : "regime_general"
+    },
+  },
 }
 
 function isNotValidValue(value) {

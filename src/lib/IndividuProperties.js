@@ -478,6 +478,25 @@ const STEPS = {
   _interetPermisDeConduire: {
     question: "Prévoyez-vous de passer le permis de conduire ?",
   },
+
+  _securite_sociale: {
+    question: "Quelle est votre régime de proctection sociale ?",
+    questionType: "enum",
+    items: [
+      {
+        value: "caf",
+        label: "Caisse d'allocations familiales (CAF)",
+      },
+      {
+        value: "msa",
+        label: "Mutualité sociale agricole (MSA)",
+      },
+      {
+        value: "autre",
+        label: "Autre",
+      },
+    ],
+  },
 }
 
 export default {
